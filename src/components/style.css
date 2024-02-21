@@ -1,0 +1,8 @@
+.main{
+    z-index: 99;
+    background-color: rgba(128, 128, 128, 0.552);
+}
+
+.container{
+    /* opacity: 1; */
+}
