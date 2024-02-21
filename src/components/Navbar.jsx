@@ -32,9 +32,9 @@ const Navbar = () => {
             <a class="nav-link active" aria-current="page" target='blank' href="https://65d4e0833f1ab8c634362f35.mockapi.io/crub">Databse</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" onChange={(e)=> setSearch(e.target.value)} value={search} type="search" placeholder="Search" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex w-25">
+          <input class="form-control  me-2" onChange={(e)=> setSearch(e.target.value)} value={search} type="search" placeholder="Search" aria-label="Search"/>
+
         </form>
       </div>
     </div>
