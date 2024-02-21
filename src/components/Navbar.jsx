@@ -28,6 +28,9 @@ const Navbar = () => {
           <li class="nav-item">
             <Link to={'/read'} class="nav-link active" aria-current="page" href="#">All Post ({users.length})</Link>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" target='blank' href="https://65d4e0833f1ab8c634362f35.mockapi.io/crub">Databse</a>
+          </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" onChange={(e)=> setSearch(e.target.value)} value={search} type="search" placeholder="Search" aria-label="Search"/>
