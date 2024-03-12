@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
  export const createUser = createAsyncThunk('createUser', async (data)=>{
-    const response = await fetch('https://65d4e0833f1ab8c634362f35.mockapi.io/crub', {
+    const response = await fetch('https://65d4e0833f1ab8c634362f35.mockapi.io/crud', {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -18,7 +18,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 })
 
  export const updateUser = createAsyncThunk('updateUser', async (data)=>{
-    const response = await fetch(`https://65d4e0833f1ab8c634362f35.mockapi.io/crub/${data.id}`, {
+    const response = await fetch(`https://65d4e0833f1ab8c634362f35.mockapi.io/crud/${data.id}`, {
         headers: {
             'Content-Type': 'application/json'
         },
@@ -35,7 +35,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 })
 
  export const deleteUser = createAsyncThunk('deleteUser', async (id)=>{
-    const response = await fetch(`https://65d4e0833f1ab8c634362f35.mockapi.io/crub/${id}`, {      
+    const response = await fetch(`https://65d4e0833f1ab8c634362f35.mockapi.io/crud/${id}`, {      
         method: 'DELETE',
     })
 
@@ -48,7 +48,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 })
 
 export const showUser = createAsyncThunk('showUser', async ()=>{
-    const reponse = await fetch('https://65d4e0833f1ab8c634362f35.mockapi.io/crub')
+    const reponse = await fetch('https://65d4e0833f1ab8c634362f35.mockapi.io/crud')
 
     try {
         const result = await reponse.json()

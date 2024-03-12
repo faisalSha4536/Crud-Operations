@@ -33,7 +33,7 @@ const Read = () => {
                     <RadioButtons />
                 </div>
                 <div className="">
-                    {users &&
+                    {
 
                         users.filter((user) => {
                             if (searchData.length === 0) {
